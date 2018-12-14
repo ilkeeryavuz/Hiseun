@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <name><![CDATA[Purchase Theme Extension]]></name>
+	<version>1.0</version>
+	<author><![CDATA[purchasetheme.com]]></author>
+	<code>purchasethemeextension</code>
+	<description>Schema.org (rich snippets) for opencart version 2.0.X.X</description>
+   
+    <file name="catalog/controller/product/product.php">
+		<operation info="Adding the reviews variable"> 
+		<search position="before"><![CDATA[$data['tags'] = array();]]></search>
+		<add><![CDATA[
+			$resultss = $this->model_catalog_review->getReviewsByProductId($this->request->get['product_id']);
+
+			foreach ($resultss as $result) {
+				$data['reviewss'][] = array(
+					'author'     => $result['author'],
+					'text'       => nl2br($result['text']),
+					'rating'     => (int)$result['rating'],
+					'date_added' => date($this->language->get('date_format_short'), strtotime($result['date_added']))
+				);
+			}
+		]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/product/product.tpl">
+		<operation info="Adding controller data facebook pixel code"> 
+		<search position="after"><![CDATA[//--></script>]]></search>
+		<add><![CDATA[		
+		<script type="application/ld+json"><!--
+			{
+			  "@context": "http://schema.org",
+			  "@type": "Product",
+			  "aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "<?php echo $rating;?>",
+				"reviewCount": "<?php echo preg_replace('/\D/', '', $reviews);?>"
+			  },
+			  "description": "<?php echo $product['description']; ?>",
+			  "name": "<?php echo $product['name']; ?>",
+			  "image": "<?php echo $thumb; ?>",			  
+			  "review": [        
+				<?php foreach($reviewss as $review) { ?>
+				{
+				  "@type": "Review",
+				  "author": "<?php echo $review['author'];?>",
+				  "datePublished": "<?php echo $review['date_added'];?>",
+				  "description": "<?php echo $review['text'];?>",
+				  "name": "<?php echo $review['author'];?>",
+				  "reviewRating": {
+					"@type": "Rating",
+					"bestRating": "5",
+					"ratingValue": "<?php echo $review['rating'];?>",
+					"worstRating": "1"
+				  }
+				},	     
+				<?php } ?>
+				}
+			  ]
+			}
+		//--></script>
+		
+		]]></add>
+		</operation>		
+	</file>	
+	
+</modification>

@@ -1,0 +1,25 @@
+<?php 
+$_['heading_title'] = 'Cookie Consent';
+$_['entry_status']	= 'Status';
+$_['text_enabled']	= 'Enabled';
+$_['text_disabled']	= 'Disabled';
+$_['entry_position']	= 'Position';
+$_['text_banner_bottom']	= 'Banner bottom';
+$_['text_banner_top']	= 'Banner top';
+$_['text_banner_top_pushdown']	= 'Banner top pushdown';
+$_['text_floating_right']	= 'Floating right';
+$_['text_floating_left']	= 'Floating left';
+$_['entry_layout']	= 'Layout';
+$_['text_block'] = 'Block';
+$_['text_classic'] = 'Classic';
+$_['text_edgeless'] = 'Edgeless';
+$_['text_wire'] = 'Wire';
+$_['entry_banner_color'] = 'Banner color';
+$_['entry_banner_text_color'] = 'Banner text color';
+$_['entry_button_color'] = 'Button color';
+$_['entry_button_text_color'] = 'Button text color';
+$_['entry_link'] = 'Link';
+$_['entry_message'] = 'Message';
+$_['entry_dismiss'] = 'Dismiss';
+$_['entry_privacy'] = 'Privacy policy';
+$_['text_edit'] = 'Edit cookie consent module';

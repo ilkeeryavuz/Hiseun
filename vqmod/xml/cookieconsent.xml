@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <file name="catalog/controller/common/header.php">
+	<operation error="log" info="">
+           <search position="after"><![CDATA[
+				public function index() {
+           ]]></search>
+           <add><![CDATA[
+           		$data['cookieconsent_status'] = $this->config->get('cookieconsent_status');
+				$data['cookieconsent_setting'] = json_encode($this->config->get('cookieconsent_setting'));
+		   ]]></add>
+       </operation>
+   </file>
+   <file name="catalog/view/theme/*/template/common/header.tpl">
+	<operation error="log" info="">
+           <search position="before"><![CDATA[
+				</head>
+           ]]></search>
+           <add><![CDATA[
+           		<?php if($cookieconsent_status){ ?>
+	           		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+					<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+					<script>
+					window.addEventListener("load", function(){
+						window.cookieconsent.initialise(<?=$cookieconsent_setting?>)
+					});
+					</script>
+           		<?php }?>			
+		   ]]></add>
+       </operation>
+   </file>
+</modification>
