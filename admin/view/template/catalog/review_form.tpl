@@ -125,7 +125,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('input[name=\'product\']').autocomplete({
 	'source': function(request, response) {
 		$.ajax({
@@ -146,5 +146,5 @@ $('input[name=\'product\']').autocomplete({
 		$('input[name=\'product_id\']').val(item['value']);		
 	}	
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

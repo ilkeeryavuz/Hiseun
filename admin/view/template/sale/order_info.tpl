@@ -694,7 +694,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $(document).delegate('#button-invoice', 'click', function() {
 	$.ajax({
 		url: 'index.php?route=sale/order/createinvoiceno&token=<?php echo $token; ?>&order_id=<?php echo $order_id; ?>',
@@ -926,5 +926,5 @@ $(document).ready(function() {
 });
 
 $('select[name="order_status_id"]').change(function(){ changeStatus(); });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?> 

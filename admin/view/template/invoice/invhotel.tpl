@@ -20,7 +20,7 @@
             <tr style="border: 1px solid #000 !important;">
             <td style="width: 40%; border: 1px solid #000 !important; "><b>Düzenleme Tarihi</b></td>
             <td style="width: 60%; border: 1px solid #000 !important;">
-                <?php echo $_GET["entry_update_date"]; ?>
+                <?php echo (isset($_GET["entry_update_date"]) ? $_GET["entry_update_date"] : ''); ?>
             </td>
           </tr>
           
@@ -28,14 +28,14 @@
             <td style="width: 40%; border: 1px solid #000 !important;"><b>Düzenleme Saati</b></td>
             
             <td style="width: 60%; border: 1px solid #000 !important;">
-                <?php echo $_GET["entry_update_time"]; ?>
+                <?php echo (isset($_GET["entry_update_time"]) ? $_GET["entry_update_time"] : ''); ?>
             </td>
           </tr>
             <tr>
             <td style="width: 40%; border: 1px solid #000 !important;"><b>Fiili Sevk Tarihi</b></td>
             
             <td style="width: 60%; border: 1px solid #000 !important;">
-                <?php echo $_GET["entry_actual_date"]; ?>
+                <?php echo (isset($_GET["entry_actual_date"]) ? $_GET["entry_actual_date"] : ''); ?>
             </td>
           </tr>
         </tbody>
@@ -54,7 +54,7 @@
         <tr style="border: 1px solid #000 !important;">
           <td style="border: 1px solid #000 !important; height: 150px !important;">
               <address>
-                  <?php echo nl2br($_GET["entry_delivery_add"]); ?>
+                  <?php echo (isset($_GET["entry_delivery_add"]) ? nl2br($_GET["entry_delivery_add"]) : ''); ?>
               </address>
           </td>
         </tr>
@@ -72,17 +72,17 @@
         <tr>
           <td style="border: 1px solid #000 !important;  height: 350px; min-height: 280px; vertical-align: top;" colspan="2">
               <div style="vertical-align: top;">
-              <?php echo nl2br($_GET["entry_product"]); ?>
+              <?php echo (isset($_GET["entry_product"]) ? nl2br($_GET["entry_product"]) : ''); ?>
               </div>
               <div id="entry_desc" style="/*margin-top:530px;*/">
-                  <?php echo nl2br($_GET["entry_desc"]); ?>
+                  <?php echo (isset($_GET["entry_desc"]) ? nl2br($_GET["entry_desc"]) : ''); ?>
               </div>
               </td>
           <td style="border: 1px solid #000 !important; vertical-align: top;" class="text-right">
-              <?php echo $_GET["entry_price"]; ?>
+              <?php echo (isset($_GET["entry_price"]) ? $_GET["entry_price"] : ''); ?>
           </td>
         </tr>
-        <?php if($_GET["entry_fieldtax"]){ ?>
+        <?php if(isset($_GET["entry_fieldtax"])){ ?>
         <tr>
           <td style="border: 1px solid #000 !important;" class="text-right" colspan="2"><b>Alan Vergisi</b></td>
           <td style="border: 1px solid #000 !important;" class="text-right">
@@ -90,7 +90,7 @@
           </td>
         </tr>
         <?php }?>
-        <?php if($_GET["entry_fee"]){ ?>
+        <?php if(isset($_GET["entry_fee"])){ ?>
         <tr>
           <td style="border: 1px solid #000 !important;" class="text-right" colspan="2"><b>Servis Hizmeti</b></td>
           <td style="border: 1px solid #000 !important;" class="text-right">
@@ -98,7 +98,7 @@
           </td>
         </tr>
         <?php }?>
-        <?php if($_GET["entry_vat18"]){ ?>
+        <?php if(isset($_GET["entry_vat18"])){ ?>
         <tr>
             <td style="border: 1px solid #000 !important;" class="text-right" colspan="2"><b>KDV (%18)</b></td>
             <td style="border: 1px solid #000 !important;" class="text-right">
@@ -106,7 +106,7 @@
             </td>
         </tr>
         <?php }?>
-        <?php if($_GET["entry_vat8"]){ ?>
+        <?php if(isset($_GET["entry_vat8"])){ ?>
         <tr>
             <td style="border: 1px solid #000 !important;" class="text-right" colspan="2"><b>KDV (%8)</b></td>
             <td style="border: 1px solid #000 !important;" class="text-right">
@@ -117,13 +117,13 @@
         <tr>
             <td style="border: 1px solid #000 !important;" class="text-right" colspan="2"><b>Toplam</b></td>
             <td style="border: 1px solid #000 !important;" class="text-right">
-                <?php echo $_GET["entry_total"]; ?>
+                <?php echo (isset($_GET["entry_total"]) ? $_GET["entry_total"] : ''); ?>
             </td>
         </tr>
         <tr>
             <td style="border: 1px solid #000 !important;" class="text-right" colspan="3">
                 <span style="float: left;"><b>Yazıyla :&nbsp;</b></span>
-                <span style="float: left;"><?php echo $_GET["entry_inv_text"]; ?></span>
+                <span style="float: left;"><?php echo (isset($_GET["entry_inv_text"]) ? $_GET["entry_inv_text"] : ''); ?></span>
             </td>
         </tr>
       </tbody>

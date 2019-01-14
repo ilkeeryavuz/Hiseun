@@ -45,7 +45,7 @@
   </div>
 </div>
 <style type="text/css"> .CodeMirror {border: 1px solid #888; height:1000px; width:100%;} </style>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
     mode: 'text/html',
     autoCloseTags: true,
@@ -54,5 +54,5 @@
     lineWrapping: true,
     indentUnit: 2
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

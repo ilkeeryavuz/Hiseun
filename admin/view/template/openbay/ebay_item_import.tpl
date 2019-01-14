@@ -59,7 +59,7 @@
     <?php } ?>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $('#button-import').bind('click', function() {
     var answer = confirm("<?php echo $text_import_confirm;?>");
 
@@ -92,5 +92,5 @@
       return 0;
     }
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

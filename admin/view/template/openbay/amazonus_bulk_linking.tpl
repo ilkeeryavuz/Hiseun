@@ -94,7 +94,7 @@
     <?php } ?>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-load-listings').bind('click', function (e) {
   e.preventDefault();
 
@@ -149,5 +149,5 @@ $('.link-button').click(function (e) {
 $('#marketplace_select').bind('change', function() {
   location = $('#marketplace_select').val();
 });
-//--></script>
+</script>
 <?php echo $footer; ?>

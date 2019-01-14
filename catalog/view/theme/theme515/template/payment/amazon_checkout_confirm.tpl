@@ -54,7 +54,7 @@
   </div>
   <?php echo $content_bottom; ?>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $(document).ready(function(){
     new CBA.Widgets.AddressWidget({
       merchantId: '<?php echo $merchant_id; ?>',
@@ -74,5 +74,5 @@
       $(this).attr('disabled', 'disabled');
     });
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

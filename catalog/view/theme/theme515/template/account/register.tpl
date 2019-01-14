@@ -529,7 +529,7 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div> 
-<script type="text/javascript"><!--
+<script type="text/javascript">
 // Sort the custom fields
 $('#account .form-group[data-sort]').detach().each(function() {
 	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group').length) {
@@ -586,8 +586,8 @@ $('input[name=\'customer_group_id\']').on('change', function() {
 });
 
 $('input[name=\'customer_group_id\']:checked').trigger('change');
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('button[id^=\'button-custom-field\']').on('click', function() {
 	var node = this;
 
@@ -635,8 +635,8 @@ $('button[id^=\'button-custom-field\']').on('click', function() {
 		}
 	}, 500);
 });
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('.date').datetimepicker({
 	pickTime: false
 });
@@ -649,8 +649,8 @@ $('.datetime').datetimepicker({
 	pickDate: true,
 	pickTime: true
 });
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('select[name=\'country_id\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=account/account/country&country_id=' + this.value,
@@ -693,5 +693,5 @@ $('select[name=\'country_id\']').on('change', function() {
 });
 
 $('select[name=\'country_id\']').trigger('change');
-//--></script>
+</script>
 <?php echo $footer; ?>

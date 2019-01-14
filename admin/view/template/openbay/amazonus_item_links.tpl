@@ -76,7 +76,7 @@
       </form>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $(document).ready(function () {
   loadLinks();
 });
@@ -331,4 +331,4 @@ function openstockCheck(product_id) {
     }
   });
 }
-//--></script>
+</script>

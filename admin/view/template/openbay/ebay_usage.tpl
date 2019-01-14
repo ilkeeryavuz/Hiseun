@@ -27,7 +27,7 @@
   </div>
 </div>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function loadUsage(){
 	    $.ajax({
         url: 'index.php?route=openbay/ebay/getusage&token=<?php echo $token; ?>',
@@ -58,5 +58,5 @@
   $(document).ready(function() {
     loadUsage();
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

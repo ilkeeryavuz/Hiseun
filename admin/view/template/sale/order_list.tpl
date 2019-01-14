@@ -161,7 +161,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#button-filter').on('click', function() {
 	url = 'index.php?route=sale/order&token=<?php echo $token; ?>';
 	
@@ -203,8 +203,8 @@ $('#button-filter').on('click', function() {
 				
 	location = url;
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('input[name=\'filter_customer\']').autocomplete({
 	'source': function(request, response) {
 		$.ajax({
@@ -224,8 +224,8 @@ $('input[name=\'filter_customer\']').autocomplete({
 		$('input[name=\'filter_customer\']').val(item['label']);
 	}	
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('input[name^=\'selected\']').on('change', function() {
 	$('#button-shipping, #button-invoice').prop('disabled', true);
 	
@@ -253,12 +253,12 @@ $('a[id^=\'button-delete\']').on('click', function(e) {
 		location = $(this).attr('href');
 	}
 });
-//--></script> 
+</script> 
   <script src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
   <link href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('.date').datetimepicker({
 	pickTime: false
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

@@ -9,7 +9,7 @@
   </div>
   <?php } ?>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#banner<?php echo $module; ?>').owlCarousel({
 	items: 6,
 	autoPlay: 3000,
@@ -18,4 +18,4 @@ $('#banner<?php echo $module; ?>').owlCarousel({
 	pagination: false,
 	transitionStyle: 'fade'
 });
---></script>
+</script>

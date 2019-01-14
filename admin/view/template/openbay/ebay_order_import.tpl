@@ -33,7 +33,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $('#button-import').bind('click', function() {
     $.ajax({
       url: 'index.php?route=openbay/ebay/importOrdersManual&token=<?php echo $token; ?>',
@@ -52,5 +52,5 @@
       }
     });
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

@@ -67,7 +67,7 @@
       </table></td>
   </tr>
 </table>
-<script type="text/javascript"><!--
+<script type="text/javascript">
     function capture() {
         var amt = $('#paypal_capture_amount').val();
 
@@ -222,4 +222,4 @@
             }
         });
     }
-//--></script>
+</script>

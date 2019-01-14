@@ -104,7 +104,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $(document).ready(function(){
     $('#openstock_selector').change(function() {
         redirectOption($('#openstock_selector').val(), 'advanced');
@@ -716,5 +716,5 @@ function saveNode(id, field, text){
   $('#'+field+'_label').text(text).show();
   $('#browse-node-modal').modal('toggle');
 }
-//--></script>
+</script>
 <?php echo $footer; ?>

@@ -309,7 +309,7 @@
   </div>
 </div>
 <?php } ?>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 // Sort the custom fields
 $('#account .form-group[data-sort]').detach().each(function() {
 	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group').length) {
@@ -364,8 +364,8 @@ $('#collapse-payment-address input[name=\'customer_group_id\']').on('change', fu
 });
 
 $('#collapse-payment-address input[name=\'customer_group_id\']:checked').trigger('change');
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('#collapse-payment-address button[id^=\'button-payment-custom-field\']').on('click', function() {
 	var node = this;
 
@@ -413,8 +413,8 @@ $('#collapse-payment-address button[id^=\'button-payment-custom-field\']').on('c
 		}
 	}, 500);
 });
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('.date').datetimepicker({
 	pickTime: false
 });
@@ -427,8 +427,8 @@ $('.datetime').datetimepicker({
 	pickDate: true,
 	pickTime: true
 });
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('#collapse-payment-address select[name=\'country_id\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
@@ -473,4 +473,4 @@ $('#collapse-payment-address select[name=\'country_id\']').on('change', function
 });
 
 $('#collapse-payment-address select[name=\'country_id\']').trigger('change');
-//--></script>
+</script>

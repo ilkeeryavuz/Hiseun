@@ -16,7 +16,7 @@
 </div>
 <script type="text/javascript" src="view/javascript/jquery/flot/jquery.flot.js"></script> 
 <script type="text/javascript" src="view/javascript/jquery/flot/jquery.flot.resize.min.js"></script>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#range a').on('click', function(e) {
 	e.preventDefault();
 	
@@ -48,7 +48,7 @@ $('#range a').on('click', function(e) {
 					show: true,
             		ticks: json['xaxis']
 				}
-			}
+			};
 			
 			$.plot('#chart-sale', [json['order'], json['customer']], option);	
 					
@@ -78,4 +78,4 @@ $('#range a').on('click', function(e) {
 });
 
 $('#range .active a').trigger('click');
-//--></script> 
+</script> 

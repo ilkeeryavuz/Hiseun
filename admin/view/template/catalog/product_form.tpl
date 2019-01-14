@@ -913,12 +913,12 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 <?php foreach ($languages as $language) { ?>
 $('#input-description<?php echo $language['language_id']; ?>').summernote({height: 300});
 <?php } ?>
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 // Manufacturer
 $('input[name=\'manufacturer\']').autocomplete({
 	'source': function(request, response) {
@@ -1061,8 +1061,8 @@ $('input[name=\'related\']').autocomplete({
 $('#product-related').delegate('.fa-minus-circle', 'click', function() {
 	$(this).parent().remove();
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 var attribute_row = <?php echo $attribute_row; ?>;
 
 function addAttribute() {
@@ -1110,8 +1110,8 @@ function attributeautocomplete(attribute_row) {
 $('#attribute tbody tr').each(function(index, element) {
 	attributeautocomplete(index);
 });
-//--></script> 
-  <script type="text/javascript"><!--	
+</script> 
+  <script type="text/javascript">
 var option_row = <?php echo $option_row; ?>;
 
 $('input[name=\'option\']').autocomplete({
@@ -1246,8 +1246,8 @@ $('input[name=\'option\']').autocomplete({
 		option_row++;
 	}	
 });
-//--></script> 
-  <script type="text/javascript"><!--		
+</script> 
+  <script type="text/javascript">	
 var option_value_row = <?php echo $option_value_row; ?>;
 
 function addOptionValue(option_row) {	
@@ -1283,8 +1283,8 @@ function addOptionValue(option_row) {
         
 	option_value_row++;
 }
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 var discount_row = <?php echo $discount_row; ?>;
 
 function addDiscount() {
@@ -1310,8 +1310,8 @@ function addDiscount() {
 	
 	discount_row++;
 }
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 var special_row = <?php echo $special_row; ?>;
 
 function addSpecial() {
@@ -1336,8 +1336,8 @@ function addSpecial() {
 		
 	special_row++;
 }
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 var image_row = <?php echo $image_row; ?>;
 
 function addImage() {
@@ -1351,8 +1351,8 @@ function addImage() {
 	
 	image_row++;
 }
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 var recurring_count = <?php echo $recurring_count; ?>;
 
 function addRecurring() {
@@ -1381,8 +1381,8 @@ function addRecurring() {
 	
 	$('#tab-recurring table tbody').append(html);
 }
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('.date').datetimepicker({
 	pickTime: false
 });
@@ -1395,9 +1395,9 @@ $('.datetime').datetimepicker({
 	pickDate: true,
 	pickTime: true
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('#language a:first').tab('show');
 $('#option a:first').tab('show');
-//--></script></div>
+</script></div>
 <?php echo $footer; ?> 

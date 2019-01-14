@@ -166,7 +166,7 @@ $(document).ready(function(){
 	});
 });
 </script>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#tabs a').tabs();
-//--></script>
+</script>
 <?php echo $footer; ?>

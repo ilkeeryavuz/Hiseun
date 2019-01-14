@@ -128,7 +128,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function validateForm() {
       $('#form-etsy-settings').submit();
   }
@@ -186,5 +186,5 @@
       }
     });
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

@@ -114,7 +114,7 @@
     <div class="pull-right"> <a onclick="validate();" class="btn btn-primary"><?php echo $button_update; ?></a> </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function notifyAll() {
     var value_checked = $('#notify_all').prop('checked');
 
@@ -169,5 +169,5 @@
       return false;
     }
   }
-//--></script>
+</script>
 <?php echo $footer; ?>

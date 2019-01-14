@@ -92,12 +92,12 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#input-message').summernote({
 	height: 300
 });
-//--></script> 
-  <script type="text/javascript"><!--	
+</script> 
+  <script type="text/javascript">	
 $('select[name=\'to\']').on('change', function() {
 	$('.to').hide();
 	
@@ -105,8 +105,8 @@ $('select[name=\'to\']').on('change', function() {
 });
 
 $('select[name=\'to\']').trigger('change');
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 // Customers
 $('input[name=\'customers\']').autocomplete({
 	'source': function(request, response) {
@@ -240,5 +240,5 @@ function send(url) {
 		}
 	});
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

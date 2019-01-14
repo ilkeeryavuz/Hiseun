@@ -50,8 +50,8 @@
   </div>
 </div>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-confirm').bind('click', function() {
   $('#firstdata_form_redirect').submit();
 });
-//--></script>
+</script>

@@ -142,7 +142,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 var route_row = <?php echo $route_row; ?>;
 
 function addRoute() {
@@ -193,5 +193,5 @@ function addModule() {
 	
 	module_row++;
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

@@ -235,14 +235,14 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 <?php foreach ($languages as $language) { ?>
 $('#input-description<?php echo $language['language_id']; ?>').summernote({
 	height: 300
 });
 <?php } ?>
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('input[name=\'path\']').autocomplete({
 	'source': function(request, response) {
 		$.ajax({
@@ -268,8 +268,8 @@ $('input[name=\'path\']').autocomplete({
 		$('input[name=\'parent_id\']').val(item['value']);
 	}
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('input[name=\'filter\']').autocomplete({
 	'source': function(request, response) {
 		$.ajax({
@@ -297,8 +297,8 @@ $('input[name=\'filter\']').autocomplete({
 $('#category-filter').delegate('.fa-minus-circle', 'click', function() {
 	$(this).parent().remove();
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('#language a:first').tab('show');
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

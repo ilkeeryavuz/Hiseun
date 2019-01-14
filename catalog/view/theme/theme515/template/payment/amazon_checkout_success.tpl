@@ -7,10 +7,10 @@
   </div>
   <?php echo $content_bottom; ?>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   new CBA.Widgets.OrderDetailsWidget ({
     merchantId: "<?php echo $merchant_id; ?>",
     orderID: "<?php echo $amazon_order_id; ?>"
   }).render ("AmazonOrderDetail");
-//--></script>
+</script>
 <?php echo $footer; ?>

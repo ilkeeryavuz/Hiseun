@@ -141,7 +141,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function checkLinkedItems() {
       $.ajax({
           url: 'index.php?route=openbay/ebay/loadLinkedStatus&token=<?php echo $token; ?>',
@@ -435,5 +435,5 @@
   $(document).ready(function() {
       checkLinkedItems();
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

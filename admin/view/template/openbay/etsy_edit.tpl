@@ -83,7 +83,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   var image_count = 1;
 
   $('#button-save').bind('click', function() {
@@ -120,5 +120,5 @@
     });
   });
 
-//--></script>
+</script>
 <?php echo $footer; ?>

@@ -20,21 +20,21 @@
                         <tr style="border: 1px solid #000 !important;">
                             <td style="width: 40%; border: 1px solid #000 !important; "><b>Düzenleme Tarihi</b></td>
                             <td style="width: 60%; border: 1px solid #000 !important;">
-                                <?php echo $_GET["entry_update_date"]; ?>
+                                <?php echo (isset($_GET["entry_update_date"]) ? $_GET["entry_update_date"] : ''); ?>
                             </td>
                         </tr>
                         <tr>
                             <td style="width: 40%; border: 1px solid #000 !important;"><b>Düzenleme Saati</b></td>
 
                             <td style="width: 60%; border: 1px solid #000 !important;">
-                                <?php echo $_GET["entry_update_time"]; ?>
+                                <?php echo (isset($_GET["entry_update_time"]) ? $_GET["entry_update_time"] : ''); ?>
                             </td>
                         </tr>
                         <tr>
                             <td style="width: 40%; border: 1px solid #000 !important;"><b>Fiili Sevk Tarihi</b></td>
 
                             <td style="width: 60%; border: 1px solid #000 !important;">
-                                <?php echo $_GET["entry_actual_date"]; ?>
+                                <?php echo (isset($_GET["entry_actual_date"]) ? $_GET["entry_actual_date"] : ''); ?>
                             </td>
                         </tr>
                     </tbody>
@@ -53,12 +53,12 @@
                     <tr style="border: 1px solid #000 !important;">
                         <td style="border: 1px solid #000 !important; height: 60px !important;">
                             <address style="margin-bottom: 0px!important; ">
-                                <?php echo nl2br($_GET["entry_delivery_add"]); ?>
+                                <?php echo (isset($_GET["entry_delivery_add"]) ? nl2br($_GET["entry_delivery_add"]) : ''); ?>
                             </address>
                         </td>
                         <td style="border: 1px solid #000 !important; height: 60px !important;">
                             <address style="margin-bottom: 0px!important; ">
-                                <?php echo nl2br($_GET["entry_inv_add"]); ?>
+                                <?php echo (isset($_GET["entry_inv_add"]) ? nl2br($_GET["entry_inv_add"]) : ''); ?>
                             </address>
                         </td>
                     </tr>
@@ -77,91 +77,91 @@
                 <tbody style="border: 1px solid #000 !important;">
 
                     <tr style="border: 1px solid #000 !important;">
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product1"]; ?></td>
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product_code1"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_piece1"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_unit_price1"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_price1"]; ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product1"]) ? $_GET["entry_product1"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product_code1"]) ? $_GET["entry_product_code1"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_piece1"]) ? $_GET["entry_piece1"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_unit_price1"]) ? $_GET["entry_unit_price1"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_price1"]) ? $_GET["entry_price1"] : ''); ?></td>
                     </tr>
 
                     <tr style="border: 1px solid #000 !important;">
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product2"]; ?></td>
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product_code2"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_piece2"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_unit_price2"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_price2"]; ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product2"]) ? $_GET["entry_product2"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product_code2"]) ? $_GET["entry_product_code2"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_piece2"]) ? $_GET["entry_piece2"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_unit_price2"]) ? $_GET["entry_unit_price2"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_price2"]) ? $_GET["entry_price2"] : ''); ?></td>
                     </tr>
 
                     <tr style="border: 1px solid #000 !important;">
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product3"]; ?></td>
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product_code3"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_piece3"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_unit_price3"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_price3"]; ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product3"]) ? $_GET["entry_product3"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product_code3"]) ? $_GET["entry_product_code3"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_piece3"]) ? $_GET["entry_piece3"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_unit_price3"]) ? $_GET["entry_unit_price3"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_price3"]) ? $_GET["entry_price3"] : ''); ?></td>
                     </tr>
 
                     <tr style="border: 1px solid #000 !important;">
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product4"]; ?></td>
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product_code4"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_piece4"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_unit_price4"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_price4"]; ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product4"]) ? $_GET["entry_product4"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product_code4"]) ? $_GET["entry_product_code4"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_piece4"]) ? $_GET["entry_piece4"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_unit_price4"]) ? $_GET["entry_unit_price4"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_price4"]) ? $_GET["entry_price4"] : ''); ?></td>
                     </tr>
 
                     <tr style="border: 1px solid #000 !important;">
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product5"]; ?></td>
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product_code5"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["adet5"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_unit_price5"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_price5"]; ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product5"]) ? $_GET["entry_product5"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product_code5"]) ? $_GET["entry_product_code5"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_piece5"]) ? $_GET["entry_piece5"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_unit_price5"]) ? $_GET["entry_unit_price5"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_price5"]) ? $_GET["entry_price5"] : ''); ?></td>
                     </tr>
 
                     <tr style="border: 1px solid #000 !important;">
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product6"]; ?></td>
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product_code6"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_piece6"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_unit_price6"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_price6"]; ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product6"]) ? $_GET["entry_product6"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product_code6"]) ? $_GET["entry_product_code6"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_piece6"]) ? $_GET["entry_piece6"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_unit_price6"]) ? $_GET["entry_unit_price6"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_price6"]) ? $_GET["entry_price6"] : ''); ?></td>
                     </tr>
 
                     <tr style="border: 1px solid #000 !important;">
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product7"]; ?></td>
-                        <td style="border: 1px solid #000 !important;"><?php echo $_GET["entry_product_code7"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_piece7"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_unit_price7"]; ?></td>
-                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo $_GET["entry_price7"]; ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product7"]) ? $_GET["entry_product7"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;"><?php echo (isset($_GET["entry_product_code7"]) ? $_GET["entry_product_code7"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_piece7"]) ? $_GET["entry_piece7"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_unit_price7"]) ? $_GET["entry_unit_price7"] : ''); ?></td>
+                        <td style="border: 1px solid #000 !important;" class="text-right"><?php echo (isset($_GET["entry_price7"]) ? $_GET["entry_price7"] : ''); ?></td>
                     </tr>
 
                     <tr style="border: 1px solid #000 !important;">
                         <td style="border: 1px solid #000 !important;" class="text-right" colspan="4"><b>Ara Toplam</b></td>
                         <td style="border: 1px solid #000 !important;" class="text-right">
-                            <?php echo $_GET["entry_subtotal"]; ?>
+                            <?php echo (isset($_GET["entry_subtotal"]) ? $_GET["entry_subtotal"] : ''); ?>
                         </td>
                     </tr>
-                    <?php if($_GET["entry_vat18"]){ ?>
+                    <?php if(isset($_GET["entry_vat18"])){ ?>
                     <tr>
                         <td style="border: 1px solid #000 !important;" class="text-right" colspan="4"><b>KDV (%18)</b></td>
                         <td style="border: 1px solid #000 !important;" class="text-right">
-                            <?php echo $_GET["entry_vat18"]; ?>
+                            <?php echo (isset($_GET["entry_vat18"]) ? $_GET["entry_vat18"] : ''); ?>
                         </td>
                     </tr>
                     <?php }?>
-                    <?php if($_GET["entry_vat8"]){ ?>
+                    <?php if(isset($_GET["entry_vat8"])){ ?>
                     <tr>
                         <td style="border: 1px solid #000 !important;" class="text-right" colspan="4"><b>KDV (%8)</b></td>
                         <td style="border: 1px solid #000 !important;" class="text-right">
-                            <?php echo $_GET["entry_vat8"]; ?>
+                            <?php echo (isset($_GET["entry_vat8"]) ? $_GET["entry_vat8"] : ''); ?>
                         </td>
                     </tr>
                     <?php }?>
                     <tr>
                         <td style="border: 1px solid #000 !important;" class="text-right" colspan="4" >
                             <span style="float: left;"><b>Yazıyla :&nbsp;</b></span>
-                            <span style="float: left;"><?php echo $_GET["entry_inv_text"]; ?></span>
+                            <span style="float: left;"><?php echo (isset($_GET["entry_inv_text"]) ? $_GET["entry_inv_text"] : ''); ?></span>
                             <span style="float: right;"><b>Toplam</b></span>
                         </td>
                         <td style="border: 1px solid #000 !important;" class="text-right">
-                            <?php echo $_GET["entry_total"]; ?>
+                            <?php echo (isset($_GET["entry_total"]) ? $_GET["entry_total"] : ''); ?>
                         </td>
                     </tr>
                 </tbody>

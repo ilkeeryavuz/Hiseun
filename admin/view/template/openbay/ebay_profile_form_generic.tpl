@@ -76,9 +76,9 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
     $('#price_modify').on('change', function(){
         $(this).text().replace('%', '');
     });
-//--></script>
+</script>
 <?php echo $footer; ?>

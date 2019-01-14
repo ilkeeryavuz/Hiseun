@@ -137,7 +137,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 var url = 'index.php?route=openbay/etsy_product/listings&token=<?php echo $token; ?>&page=<?php echo $filter["page"]; ?>';
 
 var filter_keywords = $('input[name=\'keywords\']').val();
@@ -350,5 +350,5 @@ $('input[name=\'add_link_product\']').autocomplete({
     $('#input-product-id').val(item['value']);
   }
 });
-//--></script>
+</script>
 <?php echo $footer; ?>

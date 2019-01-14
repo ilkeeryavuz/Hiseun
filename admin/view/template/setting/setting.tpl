@@ -1588,7 +1588,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('select[name=\'config_template\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=setting/setting/template&token=<?php echo $token; ?>&template=' + encodeURIComponent(this.value),
@@ -1611,8 +1611,8 @@ $('select[name=\'config_template\']').on('change', function() {
 });
 
 $('select[name=\'config_template\']').trigger('change');
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('select[name=\'config_country_id\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=setting/setting/country&token=<?php echo $token; ?>&country_id=' + this.value,
@@ -1651,5 +1651,5 @@ $('select[name=\'config_country_id\']').on('change', function() {
 });
 
 $('select[name=\'config_country_id\']').trigger('change');
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

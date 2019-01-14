@@ -654,7 +654,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('select[name=\'customer_group_id\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=sale/customer/customfield&token=<?php echo $token; ?>&customer_group_id=' + this.value,
@@ -680,8 +680,8 @@ $('select[name=\'customer_group_id\']').on('change', function() {
 });
 
 $('select[name=\'customer_group_id\']').trigger('change');
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 var address_row = <?php echo $address_row; ?>;
 
 function addAddress() {
@@ -878,8 +878,8 @@ function addAddress() {
 
 	address_row++;
 }
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 function country(element, index, zone_id) {
   if (element.value != '') {
 		$.ajax({
@@ -924,8 +924,8 @@ function country(element, index, zone_id) {
 }
 
 $('select[name$=\'[country_id]\']').trigger('change');
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('#history').delegate('.pagination a', 'click', function(e) {
 	e.preventDefault();
 
@@ -957,8 +957,8 @@ $('#button-history').on('click', function(e) {
 		}
 	});
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('#transaction').delegate('.pagination a', 'click', function(e) {
 	e.preventDefault();
 
@@ -991,8 +991,8 @@ $('#button-transaction').on('click', function(e) {
 		}
 	});
 });
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('#reward').delegate('.pagination a', 'click', function(e) {
 	e.preventDefault();
 
@@ -1158,5 +1158,5 @@ $('.datetime').datetimepicker({
 $('.time').datetimepicker({
 	pickDate: false
 });	
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

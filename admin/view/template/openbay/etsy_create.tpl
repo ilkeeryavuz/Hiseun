@@ -289,7 +289,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   var image_count = 1;
 
   function submitForm() {
@@ -550,5 +550,5 @@
     getShopSection();
   });
 
-//--></script>
+</script>
 <?php echo $footer; ?>

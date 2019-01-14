@@ -45,7 +45,7 @@
     <div class="modal-footer"><?php echo $pagination; ?></div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('a.thumbnail').on('click', function(e) {
 	e.preventDefault();
 
@@ -113,8 +113,8 @@ $('#button-search').on('click', function() {
 			
 	$('#modal-image').load(url);
 });
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('#button-upload').on('click', function() {
 	$('#form-upload').remove();
 	
@@ -237,4 +237,4 @@ $('#modal-image #button-delete').on('click', function(e) {
 		});
 	}
 });
-//--></script>
+</script>

@@ -56,7 +56,7 @@
       </table></td>
   </tr>
 </table>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 function markAsComplete() {
     $('#complete-entry, #reauthorise-entry, #reauthorise-entry').html('-');
     $('#capture-status').html('<?php echo $text_complete ?>');
@@ -152,4 +152,4 @@ function capture() {
         }
     });
 }
-//--></script>
+</script>

@@ -261,7 +261,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function filter() {
       url = 'index.php?route=extension/openbay/items&token=<?php echo $token; ?>';
 
@@ -349,5 +349,5 @@
       alert('<?php echo $error_select_items; ?>');
     }
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

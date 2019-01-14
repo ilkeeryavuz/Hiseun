@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 function refund() {
   var amount = $('input[name="amount"]').val();
 
@@ -65,5 +65,5 @@ function refund() {
     }
   });
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

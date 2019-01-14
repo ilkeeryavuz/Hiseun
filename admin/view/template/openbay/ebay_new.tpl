@@ -987,7 +987,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function updateReserveMessage(elementId, total) {
       var reserve = total - $('#qty_'+elementId).val();
       $('#qty_reserve_'+elementId).text(reserve);
@@ -2058,5 +2058,5 @@
       $('#weight-minor-text').text('Grams');
     }
   }
-//--></script>
+</script>
 <?php echo $footer; ?>

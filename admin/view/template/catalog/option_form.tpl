@@ -150,7 +150,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('select[name=\'type\']').on('change', function() {
 	if (this.value == 'select' || this.value == 'radio' || this.value == 'checkbox' || this.value == 'image') {
 		$('#option-value').show();
@@ -181,5 +181,5 @@ function addOptionValue() {
 	
 	option_value_row++;
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

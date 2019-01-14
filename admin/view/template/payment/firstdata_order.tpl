@@ -89,7 +89,7 @@
   <input type="hidden" name="tdate" value="<?php echo $firstdata_order['tdate']; ?>"/>
   <input type="hidden" name="order_id" value="<?php echo $order_id; ?>"/>
 </form>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $("#button-void").bind('click', function () {
   if (confirm('<?php echo $text_confirm_void; ?>')) {
     $('#voidform').submit();
@@ -119,4 +119,4 @@ $(document).ready(function () {
     alert('<?php echo $capture_error; ?>');
   <?php } ?>
 });
-//--></script>
+</script>

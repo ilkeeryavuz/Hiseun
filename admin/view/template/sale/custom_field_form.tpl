@@ -219,7 +219,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('select[name=\'type\']').on('change', function() {
 	if (this.value == 'select' || this.value == 'radio' || this.value == 'checkbox') {
 		$('#custom-field-value').show();
@@ -276,5 +276,5 @@ function addCustomFieldValue() {
 	
 	custom_field_value_row++;
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

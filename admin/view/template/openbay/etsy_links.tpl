@@ -84,7 +84,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function addLink() {
     var product_id = $('#input-product-id').val();
     var etsy_id = $('#input-etsy-id').val();
@@ -174,5 +174,5 @@
   $(document).ready(function() {
 
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

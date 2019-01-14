@@ -50,7 +50,7 @@
   </div>
 </div>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function loadAccount() {
     $.ajax({
       url: 'index.php?route=openbay/ebay/getMyPlan&token=<?php echo $token; ?>',
@@ -153,5 +153,5 @@
     loadAccount();
     loadPlans();
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

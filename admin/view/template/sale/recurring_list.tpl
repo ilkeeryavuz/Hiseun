@@ -140,7 +140,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#button-filter').on('click', function() {
 	url = 'index.php?route=sale/recurring&token=<?php echo $token; ?>';
 
@@ -192,5 +192,5 @@ $('#form input').keydown(function(e) {
 $('.date').datetimepicker({ 
 	pickTime: false 
 });
-//--></script> </div>
+</script> </div>
 <?php echo $footer; ?>

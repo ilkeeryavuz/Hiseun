@@ -61,12 +61,12 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#input-code').on('keyup', function() {
 	$('#input-example1').val('<?php echo $store; ?>?tracking=' + $('#input-code').val());
 	$('#input-example2').val('<?php echo $store; ?>index.php?route=common/home&tracking=' + $('#input-code').val());
 });
 
 $('#input-code').trigger('keyup');
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

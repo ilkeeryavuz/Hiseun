@@ -76,7 +76,7 @@
   </div>
 </div>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function loadSummary(){
     $.ajax({
       url: 'index.php?route=openbay/ebay/getSellerSummary&token=<?php echo $token; ?>',
@@ -149,5 +149,5 @@
   $(document).ready(function() {
     loadSummary();
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

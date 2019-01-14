@@ -43,7 +43,7 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('input[name=\'product\']').autocomplete({
 	'source': function(request, response) {
 		$.ajax({
@@ -64,5 +64,5 @@ $('input[name=\'product\']').autocomplete({
 		$('textarea[name=\'link\']').val(item['value']);	
 	}	
 });
-//--></script> 
+</script> 
 <?php echo $footer; ?> 

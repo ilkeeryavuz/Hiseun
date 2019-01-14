@@ -19,7 +19,7 @@
   <input type="hidden" name="addressSelected" value="0" />
   <?php echo $content_bottom; ?>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $(document).ready(function(){
     $('#continue-button').click(function(){
       $('div.warning').remove();
@@ -90,5 +90,5 @@
       }
     }).render('amazon-address-widget');
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

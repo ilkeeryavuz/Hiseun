@@ -157,7 +157,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#country a:first').tab('show');
-//--></script></div>
+</script></div>
 <?php echo $footer; ?> 

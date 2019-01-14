@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-body" style="text-align: <?php echo $align; ?>;"><span id="AmazonCheckoutWidgetModule<?php echo $module; ?>"></span></div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 new CBA.Widgets.InlineCheckoutWidget({
 	merchantId: '<?php echo $merchant_id; ?>',
 	buttonSettings: {
@@ -19,4 +19,4 @@ new CBA.Widgets.InlineCheckoutWidget({
 		}
 	}
 }).render('AmazonCheckoutWidgetModule<?php echo $module; ?>');
-//--></script>
+</script>

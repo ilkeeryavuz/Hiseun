@@ -90,7 +90,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 var image_row = <?php echo $image_row; ?>;
 
 function addImage() {
@@ -112,5 +112,5 @@ function addImage() {
 	
 	image_row++;
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

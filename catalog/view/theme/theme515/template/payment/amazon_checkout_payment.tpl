@@ -16,7 +16,7 @@
   <input type="hidden" name="payment_method" value="" />
   <?php echo $content_bottom; ?>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $(document).ready(function(){
     $('#continue-button').click(function(){
       $('div.warning').remove();
@@ -37,5 +37,5 @@
 
     }).render('amazon-wallet-widget');
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

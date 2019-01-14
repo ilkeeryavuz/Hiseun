@@ -110,7 +110,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#button-send').on('click', function() {
 	$.ajax({
 		url: 'index.php?route=sale/voucher/send&token=<?php echo $token; ?>',
@@ -141,5 +141,5 @@ $('#button-send').on('click', function() {
 		}
 	});	
 })
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

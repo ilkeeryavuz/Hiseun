@@ -67,7 +67,7 @@
     </table>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 function filter() {
 	url = 'index.php?route=openbay/amazon/stockUpdates&token=<?php echo $token; ?>';
 
@@ -84,14 +84,14 @@ function filter() {
 	}
 	location = url;
 }
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
 $(document).ready(function() {
 	$('#date-start').datepicker({dateFormat: 'yy-mm-dd'});
 	$('#date-end').datepicker({dateFormat: 'yy-mm-dd'});
 });
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
 $('.date').datetimepicker({
   pickTime: false
 });
@@ -104,5 +104,5 @@ $('.datetime').datetimepicker({
 $('.time').datetimepicker({
   pickDate: false
 });
-//--></script>
+</script>
 <?php echo $footer; ?>

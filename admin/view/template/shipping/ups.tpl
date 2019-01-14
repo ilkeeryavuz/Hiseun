@@ -897,7 +897,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('select[name=\'ups_origin\']').on('change', function() {
 	$('#service > div').hide();	
 										 
@@ -905,5 +905,5 @@ $('select[name=\'ups_origin\']').on('change', function() {
 });
 
 $('select[name=\'ups_origin\']').trigger('change');
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

@@ -239,7 +239,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#tabs a:first').tab('show');
-//--></script> </div>
+</script> </div>
 <?php echo $footer; ?>

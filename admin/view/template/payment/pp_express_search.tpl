@@ -163,7 +163,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 function doSearch() {
   var html;
 
@@ -244,8 +244,8 @@ function editSearch() {
   $('#search_results').empty().hide();
   $('#error').empty().hide();
 }
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('.date').datetimepicker({
 	pickTime: false
 });
@@ -258,5 +258,5 @@ $('.datetime').datetimepicker({
 	pickDate: true,
 	pickTime: true
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

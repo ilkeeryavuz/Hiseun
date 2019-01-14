@@ -82,7 +82,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 var filter_row = <?php echo $filter_row; ?>;
 
 function addFilterRow() {
@@ -102,5 +102,5 @@ function addFilterRow() {
 	
 	filter_row++;
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?> 

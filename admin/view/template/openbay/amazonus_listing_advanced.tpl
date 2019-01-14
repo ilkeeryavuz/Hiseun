@@ -79,7 +79,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $(document).ready(function(){
     $('#openstock_selector').change(function() {
         redirectOption($('#openstock_selector').attr('value'), 'advanced');
@@ -708,5 +708,5 @@ function saveNode(id){
     hideGreyScreen('browseNodeForm');
 }
 
-//--></script> 
+</script> 
 <?php echo $footer; ?>

@@ -248,7 +248,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $(document).ready(function() {
     changeNationalType();
     changeInternationalType();
@@ -363,5 +363,5 @@
   function removeShipping(id, count, type) {
     $('#' + id + '_' + type + '_' + count).remove();
   }
-//--></script>
+</script>
 <?php echo $footer; ?>

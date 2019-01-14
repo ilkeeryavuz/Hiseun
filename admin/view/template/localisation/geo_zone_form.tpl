@@ -82,17 +82,17 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#zone-id').load('index.php?route=localisation/geo_zone/zone&token=<?php echo $token; ?>&country_id=' + $('#country-id').attr('value') + '&zone_id=0');
-//--></script>
+</script>
   <?php $zone_to_geo_zone_row = 0; ?>
   <?php foreach ($zone_to_geo_zones as $zone_to_geo_zone) { ?>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#zone<?php echo $zone_to_geo_zone_row; ?>').load('index.php?route=localisation/geo_zone/zone&token=<?php echo $token; ?>&country_id=<?php echo $zone_to_geo_zone['country_id']; ?>&zone_id=<?php echo $zone_to_geo_zone['zone_id']; ?>');
-//--></script>
+</script>
   <?php $zone_to_geo_zone_row++; ?>
   <?php } ?>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 var zone_to_geo_zone_row = <?php echo $zone_to_geo_zone_row; ?>;
 
 function addGeoZone() {
@@ -112,5 +112,5 @@ function addGeoZone() {
 	
 	zone_to_geo_zone_row++;
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

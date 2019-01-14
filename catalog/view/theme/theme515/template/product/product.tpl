@@ -662,7 +662,7 @@
             return false;
         }
 
-    }
+    };
 
     function getChar(event) {
         if (event.which == null) {

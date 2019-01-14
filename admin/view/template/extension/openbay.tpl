@@ -106,7 +106,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
   function version() {
     var version = '<?php echo $openbay_version; ?>';
 
@@ -173,5 +173,5 @@
     version();
     getNotifications();
   });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

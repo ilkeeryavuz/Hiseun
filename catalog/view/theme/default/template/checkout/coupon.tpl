@@ -10,7 +10,7 @@
         <span class="input-group-btn">
         <input type="button" value="<?php echo $button_coupon; ?>" id="button-coupon" data-loading-text="<?php echo $text_loading; ?>"  class="btn btn-primary" />
         </span></div>
-      <script type="text/javascript"><!--
+      <script type="text/javascript">
 $('#button-coupon').on('click', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/coupon/coupon',
@@ -38,7 +38,7 @@ $('#button-coupon').on('click', function() {
 		}
 	});
 });
-//--></script>
+</script>
     </div>
   </div>
 </div>

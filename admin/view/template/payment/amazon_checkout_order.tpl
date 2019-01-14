@@ -61,7 +61,7 @@
     <?php } ?>
   </tbody>
 </table>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-upload').on('click', function() {
 	$('#form-upload').remove();
 	
@@ -106,4 +106,4 @@ $('#button-upload').on('click', function() {
 		}
 	}, 500);
 });
-//--></script>
+</script>

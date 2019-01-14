@@ -195,7 +195,7 @@
     </div>
   </div>
 </form>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 // Sort the custom fields
 $('#collapse-shipping-address .form-group[data-sort]').detach().each(function() {
 	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#collapse-shipping-address .form-group').length) {
@@ -210,8 +210,8 @@ $('#collapse-shipping-address .form-group[data-sort]').detach().each(function() 
 		$('#collapse-shipping-address .form-group:first').before(this);
 	}
 });
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
 $('#collapse-shipping-address button[id^=\'button-shipping-custom-field\']').on('click', function() {
 	var node = this;
 
@@ -259,8 +259,8 @@ $('#collapse-shipping-address button[id^=\'button-shipping-custom-field\']').on(
 		}
 	}, 500);
 });
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('.date').datetimepicker({
 	pickTime: false
 });
@@ -273,8 +273,8 @@ $('.datetime').datetimepicker({
 	pickDate: true,
 	pickTime: true
 });
-//--></script> 
-<script type="text/javascript"><!--
+</script> 
+<script type="text/javascript">
 $('#collapse-shipping-address select[name=\'country_id\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
@@ -319,4 +319,4 @@ $('#collapse-shipping-address select[name=\'country_id\']').on('change', functio
 });
 
 $('#collapse-shipping-address select[name=\'country_id\']').trigger('change');
-//--></script>
+</script>

@@ -82,7 +82,7 @@
 		</td>
 	</tr>
 </table>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $("#btn_void").click(function() {
 		if (confirm('<?php echo $text_confirm_void; ?>')) {
 			$.ajax({
@@ -224,4 +224,4 @@
 			});
 		}
 	});
-//--></script>
+</script>

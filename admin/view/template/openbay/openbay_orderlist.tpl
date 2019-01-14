@@ -177,7 +177,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function filter() {
     url = 'index.php?route=extension/openbay/orderList&token=<?php echo $token; ?>';
     var filter_order_id = $('input[name=\'filter_order_id\']').val();
@@ -208,20 +208,20 @@
 
     location = url;
   }
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
   $(document).ready(function() {
 	  $('.date').datepicker({dateFormat: 'yy-mm-dd'});
   });
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
   $('#form input').keydown(function(e) {
     if (e.keyCode == 13) {
       filter();
     }
   });
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
     $.widget('custom.catcomplete', $.ui.autocomplete, {
         _renderMenu: function(ul, items) {
             var self = this, currentCategory = '';
@@ -261,5 +261,5 @@
             return false;
         }
     });
-//--></script>
+</script>
 <?php echo $footer; ?>

@@ -105,8 +105,8 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
-$('#button-filter').on('click', function() {
+  <script type="text/javascript">
+  $('#button-filter').on('click', function() {
 	url = 'index.php?route=report/sale_order&token=<?php echo $token; ?>';
 	
 	var filter_date_start = $('input[name=\'filter_date_start\']').val();
@@ -135,10 +135,11 @@ $('#button-filter').on('click', function() {
 
 	location = url;
 });
-//--></script> 
-  <script type="text/javascript"><!--
-$('.date').datetimepicker({
+</script> 
+<script type="text/javascript">
+  $('.date').datetimepicker({
 	pickTime: false
 });
-//--></script></div>
+</script>
+</div>
 <?php echo $footer; ?>

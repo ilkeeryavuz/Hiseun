@@ -140,7 +140,7 @@
     <?php } ?>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $(document).ready(function () {
   $('#product-form table thead input[type="checkbox"]').change(function () {
     var checkboxes = $('input[name="product_ids[]"]');
@@ -247,5 +247,5 @@ $('#button-search').bind('click', function(e) {
     $('#bulk-list-form').prepend('<div class="alert alert-danger"><?php echo $error_select_items; ?></div>');
   }
 });
-//--></script>
+</script>
 <?php echo $footer; ?>

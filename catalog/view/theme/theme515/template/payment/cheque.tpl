@@ -11,7 +11,7 @@
     <input type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="btn btn-primary" />
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-confirm').on('click', function() {
 	$.ajax({ 
 		type: 'get',
@@ -28,4 +28,4 @@ $('#button-confirm').on('click', function() {
 		}		
 	});
 });
-//--></script> 
+</script> 

@@ -65,7 +65,7 @@
       </table></td>
   </tr>
 </table>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-void').bind('click', function () {
 	if (confirm('<?php echo $text_confirm_void; ?>')) {
 		$.ajax({
@@ -201,4 +201,4 @@ $('#button-refund').bind('click', function () {
 		});
 	}
 });
-//--></script>
+</script>

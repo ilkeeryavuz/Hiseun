@@ -69,7 +69,7 @@
       </table></td>
   </tr>
 </table>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $("#button-void").click(function() {
 		if (confirm('<?php echo $text_confirm_void; ?>')) {
 			$.ajax({
@@ -208,4 +208,4 @@
 			});
 		}
 	});
-//--></script>
+</script>

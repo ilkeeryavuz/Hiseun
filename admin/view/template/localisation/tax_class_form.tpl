@@ -99,7 +99,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 var tax_rule_row = <?php echo $tax_rule_row; ?>;
 
 function addRule() {
@@ -122,5 +122,5 @@ function addRule() {
 	
 	tax_rule_row++;
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

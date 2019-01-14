@@ -10,7 +10,7 @@
         <span class="input-group-btn">
         <input type="submit" value="<?php echo $button_reward; ?>" id="button-reward" data-loading-text="<?php echo $text_loading; ?>"  class="btn btn-primary" />
         </span></div>
-      <script type="text/javascript"><!--
+      <script type="text/javascript">
 $('#button-reward').on('click', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/reward/reward',
@@ -38,7 +38,7 @@ $('#button-reward').on('click', function() {
 		}
 	});
 });
-//--></script>
+</script>
     </div>
   </div>
 </div>

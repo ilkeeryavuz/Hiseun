@@ -263,7 +263,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#button-ip-add').on('click', function() {
     var ip = $.trim($('#input-ip').val());
 
@@ -281,5 +281,5 @@ $('#ip-allowed').delegate('.fa-minus-circle', 'click', function() {
 $('input[name=\'amazon_checkout_cron_job_token\']').on('keyup', function() {
     $('#input-cron-job-url').val('<?php echo $store; ?>index.php?route=payment/amazon_checkout/cron&token=' + $(this).val());
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

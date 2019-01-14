@@ -31,8 +31,8 @@
     <input type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="btn btn-primary" />
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-confirm').bind('click', function() {
   $('#realex_form_redirect').submit();
 });
-//--></script>
+</script>

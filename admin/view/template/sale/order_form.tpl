@@ -933,7 +933,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 // Disable the tabs
 $('#order a[data-toggle=\'tab\']').on('click', function(e) {
 	return false;
@@ -2345,5 +2345,5 @@ $('.datetime').datetimepicker({
 $('.time').datetimepicker({
 	pickDate: false
 });	
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

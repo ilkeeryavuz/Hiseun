@@ -63,7 +63,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#button-generate').on('click', function() {
 	rand = '';
 	
@@ -75,5 +75,5 @@ $('#button-generate').on('click', function() {
 	
 	$('#input-password').val(rand);
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?> 

@@ -323,7 +323,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('select[name=\'country_id\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=marketing/affiliate/country&token=<?php echo $token; ?>&country_id=' + this.value,
@@ -368,8 +368,8 @@ $('select[name=\'country_id\']').on('change', function() {
 });
 
 $('select[name=\'country_id\']').trigger('change');
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('input[name=\'payment\']').on('change', function() {
 	$('.payment').hide();
 
@@ -377,8 +377,8 @@ $('input[name=\'payment\']').on('change', function() {
 });
 
 $('input[name=\'payment\']:checked').trigger('change');
-//--></script> 
-  <script type="text/javascript"><!--
+</script> 
+  <script type="text/javascript">
 $('#transaction').delegate('.pagination a', 'click', function(e) {
 	e.preventDefault();
 
@@ -409,5 +409,5 @@ $('#button-transaction').on('click', function() {
 		}
 	});
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

@@ -89,7 +89,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('input[name=\'product\']').autocomplete({
 	source: function(request, response) {
 		$.ajax({
@@ -117,5 +117,5 @@ $('input[name=\'product\']').autocomplete({
 $('#featured-product').delegate('.fa-minus-circle', 'click', function() {
 	$(this).parent().remove();
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

@@ -78,7 +78,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 $('#button-filter').on('click', function() {
 	url = 'index.php?route=report/customer_online&token=<?php echo $token; ?>';
 	
@@ -96,5 +96,5 @@ $('#button-filter').on('click', function() {
 				
 	location = url;
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

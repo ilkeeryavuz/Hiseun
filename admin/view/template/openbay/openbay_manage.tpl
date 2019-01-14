@@ -183,7 +183,7 @@
   </div>
 </div>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $('.ftp-setting').keypress(function() {
     $('#ftp-update-module').hide();
     $('#ftp-test-row').show();
@@ -510,5 +510,5 @@
   function validateForm() {
     $('#form-openbay').submit();
   }
-//--></script>
+</script>
 <?php echo $footer; ?>

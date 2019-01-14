@@ -54,7 +54,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 var step = new Array();
 var total = 0;
 
@@ -191,5 +191,5 @@ $('#button-clear').bind('click', function() {
 		}
 	});
 });
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

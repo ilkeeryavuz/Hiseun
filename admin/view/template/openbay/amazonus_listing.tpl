@@ -354,7 +354,7 @@
     });
   });
 </script>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('.date').datetimepicker({
   pickTime: false
 });
@@ -367,5 +367,5 @@ $('.datetime').datetimepicker({
 $('.time').datetimepicker({
   pickDate: false
 });
-//--></script>
+</script>
 <?php echo $footer; ?>

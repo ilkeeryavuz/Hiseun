@@ -185,7 +185,7 @@
 	<?php echo $column_right; ?></div>
 </div>
 <?php echo $footer; ?> 
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-search').bind('click', function() {
 	url = 'index.php?route=product/search';
 	
@@ -231,4 +231,4 @@ $('select[name=\'category_id\']').on('change', function() {
 });
 
 $('select[name=\'category_id\']').trigger('change');
---></script>
+</script>

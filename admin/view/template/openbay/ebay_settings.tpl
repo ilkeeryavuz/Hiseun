@@ -478,7 +478,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
     $('#button-clear-locks').bind('click', function() {
       $.ajax({
         url: 'index.php?route=openbay/ebay/deleteAllLocks&token=<?php echo $token; ?>',
@@ -570,5 +570,5 @@
       checkCredentials();
       changeTaxHandler();
     });
-//--></script>
+</script>
 <?php echo $footer; ?>

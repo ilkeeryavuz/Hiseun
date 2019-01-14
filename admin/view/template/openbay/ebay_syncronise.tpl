@@ -52,7 +52,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   $('#update-categories').bind('click', function() {
     $.ajax({
       url: 'index.php?route=openbay/ebay/updatecategories&token=<?php echo $token; ?>',
@@ -120,5 +120,5 @@
       }
     });
   });
-//--></script>
+</script>
 <?php echo $footer; ?>

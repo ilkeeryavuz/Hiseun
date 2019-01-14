@@ -60,7 +60,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
 function refundAmount() {
 	var valChecked = $('#refund_full').prop('checked');
 
@@ -70,5 +70,5 @@ function refundAmount() {
 		$('#partial_amount_row').show();
 	}
 }
-//--></script></div>
+</script></div>
 <?php echo $footer; ?>

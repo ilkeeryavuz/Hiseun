@@ -71,7 +71,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $(document).ready(function () {
   $('a.profileDelete').click(function (event) {
     event.preventDefault();
@@ -82,6 +82,6 @@ $(document).ready(function () {
     }
   });
 });
-//--></script>
+</script>
 
 <?php echo $footer; ?>

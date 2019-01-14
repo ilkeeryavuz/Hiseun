@@ -123,7 +123,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
   function updateReserveMessage(){
     var reserve = parseInt($('#qty-reserve').val());
     var local = parseInt($('#qty_local').val());
@@ -331,5 +331,5 @@
   $(document).ready(function() {
     load();
   });
-//--></script>
+</script>
 <?php echo $footer; ?>
