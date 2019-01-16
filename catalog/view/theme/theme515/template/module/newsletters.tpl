@@ -7,7 +7,7 @@
         {
             if (!emailpattern.test(email))
             {
-                alert("Invalid Email");
+                alert("Hatalı Email Adresi");
                 return false;
             } else
             {
@@ -29,7 +29,7 @@
             }
         } else
         {
-            alert("Email Is Require");
+            alert("Email Adresi Zorunludur");
             $(email).focus();
             return false;
         }
