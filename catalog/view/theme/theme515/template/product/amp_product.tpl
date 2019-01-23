@@ -202,7 +202,7 @@
         </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}>
     	</style>
-        <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <noscript><style amp-boilerplate>body{-webkit-animation:none; -moz-animation:none; -ms-animation:none; animation:none;}</style></noscript>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         <!-- AMP Analytics -->
         <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -364,9 +364,9 @@
                 //on some of the ?newer MS Word exports, where you get conditionals of the form 'if gte mso 9', etc., it appears
                 //that whatever is in one of the html comments prevents strip_tags from eradicating the html comment that contains
                 //some MS Style Definitions - this last bit gets rid of any leftover comments */
-                $num_matches = preg_match_all("/\<!--/u", $text, $matches);
+                $num_matches = preg_match_all("/\/u", $text, $matches);
                 if($num_matches){
-                $text = preg_replace('/\<!--(.)*--\>/isu', '', $text);
+                $text = preg_replace('/\(.)*--\>/isu', '', $text);
                 }
                 $text = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $text);
                 return $text;
