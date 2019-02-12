@@ -117,6 +117,7 @@
                                                                    data-src="<?php echo $product['thumb']; ?>"
                                                                    src="image/catalog/preload.gif"/></a>
                 </div>
+                
                 <div class="caption">
                     <?php if ($product['price']) { ?>
                     <div class="price">

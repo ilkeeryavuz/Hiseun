@@ -53,6 +53,8 @@
                     </ul>
                 </div>
             </div>
+
+            
             <div class="col-lg-2 col-md-2 col-sm-4">
                 <div class="footer_box">
                     <h5><?php echo $text_account; ?></h5>
@@ -70,7 +72,7 @@
                             <a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a>
                         </li>
                     </ul>
-                </div>
+                </div>   
             </div>
             <div class="col-sm-1"></div>
             <div class="col-lg-2 col-md-2 col-sm-4 border">
@@ -106,14 +108,8 @@
                 <div style="float:left;">
                     <img src="catalog/view/theme/theme515/image/aws.png" />
                 </div>
-                <div style="float:left">
-                    <h6 style="font-size: 14px; line-height: 1.2; margin:20px 0 20px;">İNTERNETTE GÜVENLİ ALIŞVERİŞ</h6>
-                </div>
             </div>
             <div style="width: 50%; right: 0px; float: right;">
-                <div style="float: left;">
-                    <img src="catalog/view/theme/theme515/image/all-png.png" />
-                </div>
                 <div style="text-align: center;">Hiseun © <?php echo date("Y"); ?> - Her Hakkı Saklıdır.</div>
                 <div style="text-align: center;">Hiseun İklimlendirme Sistemleri, Turizm, İnşaat, Medikal ve Kozmetik, İthalat, İhracat, Dış Ticaret Limited Şirketi<?php /*echo $powered;*/ ?><!-- [[%FOOTER_LINK]] --></div>
             </div>

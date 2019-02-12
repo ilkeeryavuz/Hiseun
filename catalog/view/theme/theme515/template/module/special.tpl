@@ -77,7 +77,7 @@
                                 </a>
                             </div>
                             <div class="description">
-                                <!--<?php echo $product['description']; ?>-->
+                                <?php echo $product['description']; ?>
                             </div>
                             <?php if ($product['rating']) { ?>
                             <div class="rating">

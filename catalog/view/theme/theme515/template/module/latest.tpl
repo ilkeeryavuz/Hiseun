@@ -56,7 +56,6 @@
                                         <?php if ($product['model']) {?>
                                         <p class="product_model model"><?php echo $text_model; ?> <?php echo $product['model']; ?></p>
                                         <?php }?>
-
                                         <?php if ($product['price']) { ?>
                                         <div class="price">
                                             <?php if (!$product['special']) { ?>
@@ -143,8 +142,6 @@
                         <div class="description">
                             <?php echo $product['description']; ?>
                         </div>
-
-
                     </div>
                     <div class="cart-button">
                         <button class="btn btn-add" type="button" data-toggle="tooltip"

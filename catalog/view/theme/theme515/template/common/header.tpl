@@ -79,6 +79,7 @@
 <div class="swipe">
     <div class="swipe-menu">
         <ul>
+
             <li>
                 <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>"><i class="fa fa-user"></i>
                     <span><?php echo $text_account; ?></span></a>
@@ -227,12 +228,6 @@
                                         <i class="flaticon-home149"></i>
                                         <span class="hidden-sm"><?php echo $text_home; ?></span>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>">
-                                       <i class="flaticon-bookmark45"></i>
-                                       <span class="hidden-sm"><?php echo $text_wishlist; ?></span>
-                                   </a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown">
